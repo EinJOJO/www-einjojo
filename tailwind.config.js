@@ -15,6 +15,9 @@ module.exports = {
         primary: '#0094C6',
         secondary: '#5DD9C1',
       },
+      backgroundImage: {
+        'hero-pattern': 'url("/moonlight.svg")',
+      },
     },
   },
   plugins: [],
