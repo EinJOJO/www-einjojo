@@ -3,7 +3,48 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-gradient-to-b from-primary-bg to-secondary-bg text-white;
+}
+
 h1 {
-  @apply text-8xl font-bold;
-  letter-spacing: -0.015em;
+  @apply text-6xl md:text-8xl font-bold tracking-tighter;
+}
+
+h2 {
+  @apply text-5xl md:text-6xl font-semibold tracking-tight;
+}
+
+h3 {
+  @apply text-4xl md:text-5xl font-medium tracking-normal;
+}
+
+h4 {
+  @apply text-3xl md:text-4xl font-light tracking-wide;
+}
+
+h5 {
+  @apply text-2xl tracking-normal font-normal;
+}
+
+h6 {
+  @apply text-xl font-semibold tracking-normal;
+}
+
+.btn {
+  @apply bg-gradient-to-r from-primary to-secondary mx-3 px-5 py-2 rounded-xl transition-all
+  hover:bg-gradient-to-br hover:-translate-y-1
+  focus:border-2;
+}
+
+p {
+  @apply text-base md:text-lg font-normal;
+}
+
+.sub {
+  @apply text-sm md:text-base font-medium uppercase tracking-wide;
+}
+
+.overline {
+  @apply text-xs font-light tracking-widest;
 }
